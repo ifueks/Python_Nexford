@@ -1,0 +1,26 @@
+import random
+
+employees= range(400) #number of employees
+gender= [random.choice(["female", "male"])for _ in employees] #randaoly choose gender of all the employees
+salary = [random.randint(7500, 30000) for _ in employees] #randomly input employee salary as interger betwwen 7500 and 30000
+workers_detail = []
+employee_level = ["A5-F", "A1" ] #list of employee_level
+for i in employees: #for loop
+    try: #Exception handling
+        #conditional statment to determine employee level
+        if salary[i] >= 1000 and salary[i] <= 20000:
+            employee_level = "A1"
+        elif 7500 <= salary[i] <= 30000 and gender [i] == "female":
+            employee_level = "A5-F"
+        else:
+            employee_level = "unclassified" #default levelif no condition match
+        paystamp = {'employees': employees[i], 'gender': gender[i],'salary': salary[i],'employee_level' :employee_level} #create dictionaly with employee information
+
+        workers_detail.append(paystamp)
+
+    except Exception as e:
+        print(f'Error processing employee: {str(e)}')
+
+# Print details
+for paystamp in workers_detail: #print details of the employee paystamp
+    print(paystamp)
