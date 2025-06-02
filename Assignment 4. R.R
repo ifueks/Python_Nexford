@@ -1,7 +1,8 @@
 install.packages("ggplot2")
 library(ggplot2)
 genre_data <- read.csv("C:/Users/eliri/Downloads/genre_counts.csv", header=TRUE)
-# Rename columns for clarity
+
+# Rename columns 
 colnames(genre_data) <- c("Genre", "Count")
 
 # Plot
