@@ -1,4 +1,4 @@
-#pip install scikit-learn
+pip install scikit-learn
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.neighbors import KNeighborsRegressor
