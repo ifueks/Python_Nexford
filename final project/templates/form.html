@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Data Form</title>
+</head>
+<body>
+    <h2>Enter Your Details</h2>
+    <form method="post">
+        Age: <input type="number" name="age" required><br><br>
+        Gender: <input type="text" name="gender" required><br><br>
+        Total Income: <input type="number" name="income" required><br><br>
+        <h3>Expenses</h3>
+        <label>
+            <input type="checkbox" name="utilities" value="on">
+            Utilities
+        </label>
+        Amount: <input type="number" name="utilities_amount" step="0.01"><br><br>
+        <label>
+            <input type="checkbox" name="entertainment" value="on">
+            Entertainment
+        </label>
+        Amount: <input type="number" name="entertainment_amount" step="0.01"><br><br>
+        <label>
+            <input type="checkbox" name="school_fees" value="on">
+            School Fees
+        </label>
+        Amount: <input type="number" name="school_fees_amount" step="0.01"><br><br>
+        <label>
+            <input type="checkbox" name="shopping" value="on">
+            Shopping
+        </label>
+        Amount: <input type="number" name="shopping_amount" step="0.01"><br><br>
+        <label>
+            <input type="checkbox" name="healthcare" value="on">
+            Healthcare
+        </label>
+        Amount: <input type="number" name="healthcare_amount" step="0.01"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
